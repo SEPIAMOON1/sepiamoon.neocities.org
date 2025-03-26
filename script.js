@@ -1,5 +1,6 @@
 var now = new Date;
-var hour = now.getHours;
+var hour = now.getHours();
+console.log(hour)
 /*var minute = now.getMinutes
 Will be in use later.*/
 var darp = window.document.getElementById('goodmessage');
