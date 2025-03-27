@@ -9,12 +9,24 @@
 </head>
 <body>
     <h1>Welcome to Sepia's Space!</h1>
-    <h2 id="goodmessage"></h2>
+    <h2 id="goodmessage">JavaScript Is Disabled.</h2>
     <img src="https://files.catbox.moe/e1k8s5.gif">
     <br>
     <img src="https://files.catbox.moe/wteraz.gif" alt="Messacre Dancing">
     <br>
     <p id="mapsroute"><a href="map.html" target="_self">Map of the Site.</a></p>
-    <script src="script.js"></script>
+    <script>
+        var now = new Date();
+        var hour = now.getHours();
+        var darp = document.getElementById('goodmessage');
+
+        if (hour < 12) {
+            darp.innerText = "Good Morning!";
+        } else if (hour < 18) {
+            darp.innerText = "Good Afternoon!";
+        } else {
+            darp.innerText = "Good Night!";
+        }
+    </script>
 </body>
 </html>
