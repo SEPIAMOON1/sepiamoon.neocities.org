@@ -9,16 +9,17 @@
 </head>
 <body>
     <h1>Welcome to Sepia's Space!</h1>
-    <h2 id="goodmessage">JavaScript Is Disabled.</h2>
-    <img src="https://files.catbox.moe/e1k8s5.gif">
+    <h2 id="goodmsg">JavaScript Is Disabled.</h2>
+    <img src="https://files.catbox.moe/e1k8s5.gif" style="height: 50px;">
     <br>
-    <img src="https://files.catbox.moe/wteraz.gif" alt="Messacre Dancing">
+    <img src="https://files.catbox.moe/p9uz4d.gif" style="height: 357px;" alt="Cute Mococo Gif">
     <br>
-    <p id="mapsroute"><a href="map.html" target="_self">Map of the Site.</a></p>
+    <audio src="https://files.catbox.moe/zcgogj.ogg" controls autoplay preload="auto"></audio>
+    <p id="mapsroute"><a href="map.html" target="_self">Map.</a></p>
     <script>
         var now = new Date();
         var hour = now.getHours();
-        var darp = document.getElementById('goodmessage');
+        var darp = document.getElementById('goodmsg');
 
         if (hour < 12) {
             darp.innerText = "Good Morning!";
