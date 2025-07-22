@@ -27,8 +27,26 @@
   </head>
   <body>
     <h1>BAD REQUEST!</h1>
-    <h2>ERROR:404</h2>
-    <p>The requested page was not found!</p>
-    <div><p>Do you want to go to <a href="https://sepiamoon.neocities.org/map">Map?</a></p></div>
+    <h2>ERROR: 404</h2>
+    <img id="replace" width="30%">
+    <p style="font-size: 37px;">The requested page was not found!</p>
+    <div><p style="font-size: 30px;">Do you want to go to <a href="https://sepiamoon.neocities.org/map">Map?</a></p></div>
+
+    <script>
+      function pickRandomOne(array) {
+    if (!Array.isArray(array) || array.length === 0) {
+        return null;
+    }
+    return array[Math.floor(Math.random() * array.length)];
+    }
+      
+      // Creating a Array with URLs of Images.
+      const images = ['https://files.catbox.moe/n1n0sv.jpg', 'https://files.catbox.moe/ka2nbl.jpg', 'https://files.catbox.moe/bj2jv7.jpg', 'https://files.catbox.moe/k8nh8j.jpg', 'https://files.catbox.moe/a7g1y2.jpg', 'https://files.catbox.moe/756jli.jpg'];
+      // Pick a random URL
+      const randomImg = pickRandomOne(images);
+      
+      // Replace the Image with the choosen Image
+      document.querySelector("img#replace").src = randomImg
+    </script>
   </body>
 </html>
